@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+
+    <!-- Accessibility improvements:
+         - Semantic HTML
+         - Labels for form fields
+         - ARIA attributes
+         - Keyboard accessibility
+    -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2/dist/css-vars-ponyfill.min.js"></script>
+
+    <script>
+        window.addEventListener("load", function () {
+            cssVars();
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Portal</h1>
+    </header>
+
+    <nav aria-label="Main navigation">
+
+        <a href="#" aria-current="page">Home</a>
+
+        <a href="#">Courses</a>
+
+        <a href="#">Profile</a>
+
+    </nav>
+
+    <main>
+
+        <section>
+
+            <h2>Course List</h2>
+
+            <label for="search">
+                Search Course
+            </label>
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search Course">
+
+            <p
+                id="resultCount"
+                role="status"
+                aria-live="polite">
+
+                5 Courses Found
+
+            </p>
+
+            <button
+                id="menuButton"
+                aria-expanded="false">
+
+                Toggle Menu
+
+            </button>
+
+            <div
+                class="course-card"
+                tabindex="0">
+
+                <h3>Java Programming</h3>
+
+                <p>Code : CS101</p>
+
+                <button>Enroll</button>
+
+            </div>
+
+            <div
+                class="course-card"
+                tabindex="0">
+
+                <h3>Python Programming</h3>
+
+                <p>Code : CS102</p>
+
+                <button>Enroll</button>
+
+            </div>
+
+            <div
+                class="course-card"
+                tabindex="0">
+
+                <h3>Database Systems</h3>
+
+                <p>Code : CS103</p>
+
+                <button>Enroll</button>
+
+            </div>
+
+            <div
+                class="course-card"
+                tabindex="0">
+
+                <h3>Web Development</h3>
+
+                <p>Code : CS104</p>
+
+                <button>Enroll</button>
+
+            </div>
+
+            <div
+                class="course-card"
+                tabindex="0">
+
+                <h3>Cloud Computing</h3>
+
+                <p>Code : CS105</p>
+
+                <button>Enroll</button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

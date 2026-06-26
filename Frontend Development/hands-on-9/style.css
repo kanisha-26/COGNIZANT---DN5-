@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #0d6efd;
+}
+
+main {
+    width: 80%;
+    margin: 30px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#resultCount {
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+#menuButton {
+    padding: 10px 18px;
+    background-color: #198754;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#menuButton:hover {
+    background-color: #146c43;
+}
+
+.course-card {
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.course-card:hover {
+    background-color: #f8f9fa;
+}
+
+.course-card:focus {
+    outline: 3px solid #0d6efd;
+}
+
+.course-card h3 {
+    margin-top: 0;
+}
+
+button {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0b5ed7;
+}
