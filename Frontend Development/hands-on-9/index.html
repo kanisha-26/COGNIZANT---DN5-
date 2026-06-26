@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+    Accessibility Audit
+    Initial Accessibility Score: 100
+
+    Fixes:
+    - Added labels for all inputs
+    - Used semantic HTML
+    - Added ARIA attributes
+    - Added keyboard accessibility
+    - Correct heading hierarchy
+    - Improved colour contrast
+
+    Colour Contrast:
+    Before: #999999
+    After: #333333
+
+    Browser Testing:
+    Tested in Chrome and Edge.
+
+    CSS Feature:
+    Flexbox verified using caniuse.com.
+    -->
+
+    <title>Student Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<h1>Student Portal</h1>
+
+<nav aria-label="Main navigation">
+
+<a href="#">Home</a>
+
+<a href="#" aria-current="page">Courses</a>
+
+<a href="#">Profile</a>
+
+</nav>
+
+</header>
+
+<main>
+
+<section>
+
+<h2>Course List</h2>
+
+<label for="search">Search Course</label>
+
+<input
+type="text"
+id="search"
+placeholder="Search Course">
+
+<p
+id="count"
+role="status"
+aria-live="polite">
+5 Courses Found
+</p>
+
+<div class="course-card" tabindex="0">
+
+<h3>Java Programming</h3>
+
+<p>Code : CS101</p>
+
+<button>Enroll</button>
+
+</div>
+
+<div class="course-card" tabindex="0">
+
+<h3>Python Programming</h3>
+
+<p>Code : CS102</p>
+
+<button>Enroll</button>
+
+</div>
+
+<div class="course-card" tabindex="0">
+
+<h3>Database Systems</h3>
+
+<p>Code : CS103</p>
+
+<button>Enroll</button>
+
+</div>
+
+<div class="course-card" tabindex="0">
+
+<h3>Web Development</h3>
+
+<p>Code : CS104</p>
+
+<button>Enroll</button>
+
+</div>
+
+<div class="course-card" tabindex="0">
+
+<h3>Cloud Computing</h3>
+
+<p>Code : CS105</p>
+
+<button>Enroll</button>
+
+</div>
+
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
